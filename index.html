@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input radius value and get the volume of a sphere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container  w-120 h-100">
+        <form >
+          <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 ">
+                <p>Input radius value and get the volume of a sphere</p>
+    
+                <input id="input-radius"type="text" required/>
+                <br>
+                <p></p>
+    
+                <span id="result">Volume</span>
+                <br>
+                <span id="output-volume" class=""disabled></span> <br>
+                
+              
+                <button  class="btn btn-primary m-3" type="button" onclick="Draw()">calculator</button>
+
+            </div >
+            <div class="col-12 col-sm-12 col-md-4  col-lg-6 col-xl-3 ">
+                <canvas id="Canvas"  width="430" height="430"></canvas><br>
+                <button  class="btn btn-primary btn-block " onclick="clearMyCanvas()">Clear Draw</button>
+                </div>
+            </div>
+        </div>
+        </form>
+         
+    </div>
+</body>
+</html>
